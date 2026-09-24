@@ -101,8 +101,8 @@ header {
 .stats::before {
     content: "";
     position: absolute;
-    top: -60px;
-    bottom: -60px;
+    top: 0px;
+    bottom: 0px;
     left: 50%;
     width: 1px;
     background-color: var(--blue-400);
@@ -129,12 +129,48 @@ header {
     gap: 4px;
     transition: background-color 0.2s ease;
 }
+.stat-icon {
+    position: absolute;
+    top: 24px;
+    left: 32px;
+    width: 32px;
+    height: 32px;
+    border: 2px solid var(--white);
+}
 .stat h2 {
     position: absolute;
     top: 24px;
     right: 32px;
+    font-size: 32px;
+    font-weight: 500;
+}
+.stat h3 {
+    font-size: 14px;
+    font-weight: 500;
+}
+.stat h4 {
+    font-size: 14px;
+    font-weight: 400;
 }
 
 .stat:hover {
     background-color: var(--blue-600);  
+}
+.footer{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+    padding: 24px 40px;
+    font-size: 13px;
+}
+.footer-info {
+   grid-column: 1 / -1;
+    display: flex;
+    justify-content: space-between;
+}
+.attribution {
+    grid-column: 1 / -1;
+    justify-self: center;
+    margin-top: 12px;
+    font-size: 12px;
 }
