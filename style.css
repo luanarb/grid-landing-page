@@ -85,8 +85,8 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    text-align: center;
+    align-items: flex-start;
+    text-align: left;
     gap: 24px;
 }
 .stats {
@@ -132,10 +132,6 @@ header {
 .stat-icon {
     position: absolute;
     top: 24px;
-    left: 32px;
-    width: 32px;
-    height: 32px;
-    border: 2px solid var(--white);
 }
 .stat h2 {
     position: absolute;
